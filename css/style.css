@@ -1,143 +1,150 @@
-body {
-    margin: 0px;
-    background-color: rgb(177,177,180);
-    animation: introfinish 7s;
-}
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0px;
+        background-color: rgb(177,177,180);
+        animation: introfinish 7s;
+    }
 
-.diamond {
-    z-index: 0;
-    width: 500px;
-    height: 500px;
-    background: linear-gradient(45deg, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 50%, rgba(242,17,26,1) 100%);
-    transform: rotate(45deg);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -250px;
-    margin-left: -250px;
-}
+    .diamond {
+        z-index: 0;
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(45deg, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 50%, rgba(242,17,26,1) 100%);
+        transform: rotate(45deg);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -150px;
+    }
 
-.triangle {
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    background: linear-gradient(45deg, rgba(242,17,26,1) 0%, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 25%, rgba(242,17,26,0) 50%);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    margin-top: -250px;
-    margin-left: -250px;
-}
+    .triangle {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        position: fixed;
+        transform: rotate(45deg);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        margin-top: -125px;
+        margin-left: -75px;
+        opacity: 1;
+    }
 
-.left {
-    transform: rotate(45deg);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    margin-top: -245px;
-    margin-left: -82px;
-    opacity: 1;
-    animation: slideup 3s forwards;
-}
+    .left {
+        background: linear-gradient(45deg, rgba(242,17,26,1) 0%, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 25%, rgba(242,17,26,0) 50%);
+        margin-top: -125px;
+        margin-left: -75px;
+        animation: slideup 3s forwards;
+    }
 
-.right {
-    transform: rotate(225deg);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    margin-top: 0px;
-    margin-left: -162px;
-    opacity: 1;
-    animation: slidedown 3s forwards;
-}
+    .right {
+        background: linear-gradient(225deg, rgba(242,17,26,1) 0%, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 25%, rgba(242,17,26,0) 50%);
+        margin-top: -25px;
+        margin-left: -75px;
+        animation: slidedown 3s forwards;
+    }
 
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-}
-
-.intro h2 {
-    color: rgb(53,64,158);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: 400px;
-    margin-left: -180px;
-    text-shadow: 4px 3px 10px #787878;
-}
-
-.intro {
-    opacity: 0;
-    animation: introfade 5s;
-}
-
-.logo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -250px;
-    margin-left: -330px;
-    opacity: 1;
-}
-
-.secondlogo h2 {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    text-shadow: 4px 3px 10px #787878;
-}
-
-.top {
-    margin-top: -400px;
-    margin-left: -260px;
-}
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        text-align: center;
+        text-shadow: 4px 3px 10px #787878;
+    }
     
-.bottom {
-    margin-top: 350px;
-    margin-left: -260px;
+    .intro h2 {
+        color: rgb(53,64,158);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: 250px;
+        margin-left: -100px;
+    }
+    
+    .intro {
+        width: 80%;
+        padding: 20px;
+        opacity: 0;
+        visibility: visible;
+        animation: introfade 5s;
+    }
+
+    @keyframes slideup {
+        0% {opacity: 0; margin-top: -75px; margin-left: -180px;}
+        50% {opacity: 1;}
+        100% {margin-top: -125px; margin-left: -75px;}
+    }
+    
+    @keyframes slidedown {
+        0% {opacity:0; margin-top: -75px; margin-left: 32px; }
+        50% {opacity: 1;}
+        100% {margin-top: -25px; margin-left: -75px;}
+    }
+    
+    
+    @keyframes introfinish {
+        0%{background-color: rgb(234,234,234);}
+        75%{background-color: rgb(234,234,234);}
+        100%{background-color: rgb(177,177,180);}
+    }
+    
+    @keyframes introfade {
+        0%{opacity: 1;}
+        75%{opacity: 1;}
+        100%{opacity: 0; visibility: hidden;}
+    }
+
+    .secondlogo {
+
+    }
+
+    .logo {
+        position: fixed;
+        width: 400px;
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -200px;
+    }
+
+    .secondlogo h2 {
+        
+    }
+    
+    .top {
+        
+    }
+        
+    .bottom {
+    }
 }
 
-.secondlogo {
-    opacity: 1;
-    animation: secondlogofadein 10s;
-}
 
-@keyframes slidedown {
-    0%{opacity:0; margin-top: -125px;
-    margin-left: 52px; }
-    50%{opacity: 1;}
-    100% {margin-top: 0px;
-    margin-left: -162px;}
-}
 
-@keyframes slideup {
-    0%{opacity: 0; margin-top: -125px;
-    margin-left: -302px;}
-    50%{opacity: 1;}
-    100% {margin-top: -245px;
-    margin-left: -82px;}
-}
 
-@keyframes introfinish {
-    0%{background-color: rgb(234,234,234);}
-    75%{background-color: rgb(234,234,234);}
-    100%{background-color: rgb(177,177,180);}
-}
 
-@keyframes introfade {
-    0%{opacity: 1;}
-    75%{opacity: 1;}
-    100%{opacity: 0;}
-}
 
+
+/* .secondlogo {
+    opacity: 1; */
+    /* animation: secondlogofadein 10s; */
+/* } */
+
+/* nav {
+    visibility: visible; */
+    /* animation: secondlogofadein 10s; */
+/* } */
+
+
+/* 
 @keyframes secondlogofadein {
-    0%{opacity: 0;}
+    0%{opacity: 0; visibility: hidden;}
     50%{opacity: 0;}
     75%{opacity: 1;}
-    100%{opacity: 1;}
+    100%{opacity: 1; visibility: visible;}
 }
   
 a {
@@ -191,7 +198,6 @@ a {
   
 .header .menu-icon {
     cursor: pointer;
-    display: inline-block;
     float: right;
     padding: 28px 20px;
     position: relative;
@@ -253,7 +259,7 @@ a {
   
   /* 48em = 768px */
   
-@media (min-width: 48em) {
+/* @media (min-width: 768px) {
     .header li {
       float: left;
     }
@@ -269,4 +275,4 @@ a {
       display: none;
     }
   }
-  
+   */
