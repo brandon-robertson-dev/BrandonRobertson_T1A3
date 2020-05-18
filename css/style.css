@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    background-color: rgb(177,177,180);
+    animation: introfinish 7s;
 }
 
 .diamond {
@@ -34,8 +36,10 @@ body {
     top: 50%;
     left: 50%;
     z-index: 1;
-    margin-top: -125px;
-    margin-left: -302px;
+    margin-top: -245px;
+    margin-left: -82px;
+    opacity: 1;
+    animation: slideup 3s forwards;
 }
 
 .right {
@@ -44,16 +48,41 @@ body {
     top: 50%;
     left: 50%;
     z-index: 1;
-    margin-top: -125px;
-    margin-left: 52px;
+    margin-top: 0px;
+    margin-left: -162px;
+    opacity: 1;
+    animation: slidedown 3s forwards;
+}
+
+.intro {
+    opacity: 0;
+    animation: introfade 5s;
 }
 
 @keyframes slidedown {
-    margin-top: 0px;
-    margin-left: -162px;
+    0%{opacity:0; margin-top: -125px;
+    margin-left: 52px; }
+    50%{opacity: 1;}
+    100% {margin-top: 0px;
+    margin-left: -162px;}
 }
 
 @keyframes slideup {
-    margin-top: -245px;
-    margin-left: -82px;
+    0%{opacity: 0; margin-top: -125px;
+    margin-left: -302px;}
+    50%{opacity: 1;}
+    100% {margin-top: -245px;
+    margin-left: -82px;}
+}
+
+@keyframes introfinish {
+    0%{background-color: rgb(234,234,234);}
+    75%{background-color: rgb(234,234,234);}
+    100%{background-color: rgb(177,177,180);}
+}
+
+@keyframes introfade {
+    0%{opacity:1}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
 }
