@@ -3,6 +3,10 @@
     <head>
         <meta id="viewport" name="viewport" content ="width=device-width"/>
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
+        <link rel="manifest" href="/media/site.webmanifest">  
         <title>
             Contact
         </title>
@@ -21,11 +25,11 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a href="/index.html"><img src="/media/home.png" height="40px" alt="Home"></a></li>
-                <li><a href="/html/aboutme.html"><img src="/media/aboutme.png" height="40px" alt="About Me"></a></li>
-                <li><a href="/html/projects.html"><img src="/media/projects.png" height="40px" alt="Projects"></a></li>
-                <li><a href="/html/blog.html"><img src="/media/blog.png" height="40px" alt="Blog"></a></li>
-                <li><a href="/html/contact.html"><img src="/media/contact.png" height="40px" alt="Contact"></a></li>
+                <li><a href="/index.html"><img src="/media/home.png" height="40" alt="Home"></a></li>
+                <li><a href="/html/aboutme.html"><img src="/media/aboutme.png" height="40" alt="About Me"></a></li>
+                <li><a href="/html/projects.html"><img src="/media/projects.png" height="40" alt="Projects"></a></li>
+                <li><a href="/html/blog.html"><img src="/media/blog.png" height="40" alt="Blog"></a></li>
+                <li><a href="/html/contact.html"><img src="/media/contact.png" height="40" alt="Contact"></a></li>
             </ul>
         </nav>
         <br>
@@ -39,10 +43,13 @@
             <form action="action_page.php">
           
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
           
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
           
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>

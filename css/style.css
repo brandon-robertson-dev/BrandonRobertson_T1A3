@@ -1,18 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: radial-gradient(#7a7af5, #000020 80%);
-    margin: 0;
-    /* width: 100%;
-    height: 100vh; */
-    /* background: url(/media/bg.png) no-repeat;
-    background-position: center; */
     background-attachment: fixed;
-    /* background-size: cover; */
+    margin: 0;
     text-align: center;
-}
-#index .intro {
-    display: none;
-    animation: intro;
 }
 #index .container {
     margin: 0px;
@@ -23,6 +14,72 @@ body {
     flex-shrink: inherit;
     width: 100%;
     height: auto;
+}
+.intro {
+    width: 300px;
+    height: 300px;
+    z-index: -100;
+    margin: 0 auto;
+    position: fixed;
+    background-color: rgb(177,177,180);
+    box-shadow: 0px 0px 0px 10000px rgb(177,177,180);
+    animation: introfade 5s forwards;
+    transform: scale(0.8);
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -150px;
+}
+.diamond {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 50%, rgba(242,17,26,1) 100%);
+    transform: rotate(45deg);
+    margin: 75px auto;
+    opacity: 1;
+    animation: introfade 5s forwards;
+}
+.triangle {
+    width: 150px;
+    height: 150px;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.left {
+    animation: slideup 3s forwards;
+    margin-top: -350px;
+    margin-left: 175px;
+    opacity: 0;
+    background: linear-gradient(45deg, rgba(242,17,26,1) 0%, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 25%, rgba(242,17,26,0) 50%);
+}
+.right {
+    animation: slidedown 3s forwards;
+    margin-top: -250px;
+    margin-left: 175px;
+    opacity: 0;
+    background: linear-gradient(225deg, rgba(242,17,26,1) 0%, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 25%, rgba(242,17,26,0) 50%);
+}
+.intro h2 {
+    color: rgb(53,64,158);
+    opacity: 1;
+    display: block;
+    animation: introfade 5s;
+}
+@keyframes slideup {
+    0% {opacity: 0; margin-top: -300px; margin-left: -25px;}
+    50% {opacity: 1;}
+    100% {opacity: 1; margin-top: -350px; margin-left: 75px;}
+}    
+@keyframes slidedown {
+    0% {opacity: 0; margin-top: -300px; margin-left: 170px;}
+    50% {opacity: 1;}
+    100% {opacity: 1; margin-top: -250px; margin-left: 75px;}
+}
+@keyframes introfade {
+    0%{opacity: 1; display: block; z-index: 100;}
+    75%{opacity: 1;}
+    99%{z-index: 100;}
+    100%{opacity: 0; display: none; z-index: -100;}
 }
 #index #logo {
     width: 100%;
@@ -35,28 +92,22 @@ body {
 #index footer ul li {
     text-align: center;
     list-style: none;
-    padding: 15px;
+    padding: 25px;
     margin-left: -20px;
 }
 #index footer ul li img {
     width: 50px;
     filter: invert(1);
 }
-#index .top, .bottom {
-    margin-top: 100px;
-    color: white;
-    text-align: center;
-}
 .aboutme {
     background: rgba(177,177,180,0.8);
     margin: 55px 35px;
     padding: 15px;
+    border-radius: 25px;
 }
 .aboutme img {
     width: 250px;
-}
-a {
-    color: #000;
+    border-radius: 25px;
 }
 .header {
     background-color: rgb(177,177,180);
@@ -75,20 +126,13 @@ a {
 }  
 .header li a {
     display: block;
-    padding: 20px 20px;
-    /* border-right: 1px solid #f4f4f4; */
+    padding: 15px 20px;
     text-decoration: none;
 }
 .header li a:hover,
 .header .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: rgb(124, 124, 124);
 }  
-.header .logo {
-    display: block;
-    float: left;
-    padding: 15px 15px;
-    text-decoration: none;
-} 
 .header .menu {
     clear: both;
     max-height: 0;
@@ -131,7 +175,7 @@ a {
     display: none;
 }  
 .header .menu-btn:checked ~ .menu {
-    max-height: 400px;
+    max-height: 500px;
 } 
 .header .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
@@ -147,14 +191,14 @@ a {
     top: 0;
 }
 #contact input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }  
 #contact input[type=submit] {
     background-color: #0f072c;
@@ -165,12 +209,16 @@ a {
     cursor: pointer;
 }  
 #contact input[type=submit]:hover {
-    background-color: rgb(177,177,180)
+    background-color: rgb(177,177,180);
+    color: black;
 } 
 #contact .container {
     border-radius: 5px;
     background-color: rgba(177,177,180,0.7);
     padding: 20px;
+    margin: 0px auto;
+    max-width: 600px;
+    min-width: 300px;
 }
 h1 {
     color: white;
@@ -296,48 +344,25 @@ h1 {
     }
 }
 @media (min-width: 855px) {
-    .header {
-        background-color: rgb(177,177,180);
-    }
     .header li {
-      float: left;
+        float: left;
     }
     .header li a {
-      padding: 20px 30px;
+        padding: 20px 30px;
     }
     .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
+        clear: none;
+        float: right;
+        max-height: none;
     }
     .header .menu-icon {
-      display: none;
-    }
-    .header .logo {
-        display: block;
-        float: left;
-        padding: 20px 20px;
-        text-decoration: none;
-    }
-    body {
-        margin: 0;
-        /* background: url(/media/bgcopy.png) no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover; */
-    }
-    #index .top, .bottom {
-        margin-top: 150px;
+        display: none;
     }
     #index #logo {
         max-height: 500px;
         width: auto;
     }
-    footer {
-        display: none;
-    }
     .aboutme {
-        background: lightgrey;
         margin: 80px 125px;
         padding: 50px;
     }
@@ -347,7 +372,7 @@ h1 {
     h1{
         margin-top: 100px;
     }
-    #contact .container {
-        margin: 0px 150px 0px 150px;
+    .intro {
+        transform: scale(1.2);
     }
-}  
+} 
