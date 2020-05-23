@@ -99,16 +99,6 @@ body {
     width: 50px;
     filter: invert(1);
 }
-.aboutme {
-    background: rgba(177,177,180,0.8);
-    margin: 55px 35px;
-    padding: 15px;
-    border-radius: 25px;
-}
-.aboutme img {
-    width: 250px;
-    border-radius: 25px;
-}
 .header {
     background-color: rgb(177,177,180);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -189,36 +179,6 @@ body {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
-}
-#contact input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}  
-#contact input[type=submit] {
-    background-color: #0f072c;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}  
-#contact input[type=submit]:hover {
-    background-color: rgb(177,177,180);
-    color: black;
-} 
-#contact .container {
-    border-radius: 5px;
-    background-color: rgba(177,177,180,0.7);
-    padding: 20px;
-    margin: 0px auto;
-    max-width: 600px;
-    min-width: 300px;
 }
 h1 {
     color: white;
@@ -361,13 +321,6 @@ h1 {
     #index #logo {
         max-height: 500px;
         width: auto;
-    }
-    .aboutme {
-        margin: 80px 125px;
-        padding: 50px;
-    }
-    .aboutme img {
-        width: 550px;
     }
     h1{
         margin-top: 100px;
