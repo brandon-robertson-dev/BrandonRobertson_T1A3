@@ -101,13 +101,29 @@ body {
 }
 .aboutme {
     background: rgba(177,177,180,0.8);
-    margin: 55px 35px;
-    padding: 15px;
+    margin: 0px 35px;
+    padding: 20px 15px;
     border-radius: 25px;
+    margin-top: 55px;
 }
 .aboutme img {
     width: 250px;
     border-radius: 25px;
+}
+.skills {
+    background: rgba(177,177,180,0.8);
+    display: flex;
+    justify-content: center;
+    margin: 0px 35px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin-top: 55px;
+    margin-bottom: -25px;
+}
+.skills img {
+    height: 100px;
+    border-radius: 25px;
+    padding: 0px 25px;
 }
 .header {
     background-color: rgb(177,177,180);
@@ -216,7 +232,7 @@ body {
     border-radius: 5px;
     background-color: rgba(177,177,180,0.7);
     padding: 20px;
-    margin: 0px auto;
+    margin: 8px auto;
     max-width: 600px;
     min-width: 300px;
 }
@@ -343,12 +359,49 @@ h1 {
       transform: translateY(0) rotateZ(360deg);
     }
 }
-@media (min-width: 855px) {
+#blog .navbar {
+    background: rgba(177,177,180,0.8);
+    margin: 0px 35px;
+    padding: 20px 15px;
+    border-radius: 25px;
+    margin-top: 55px;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-top: 55px;
+    margin-bottom: -40px;
+    padding: 10px;
+    width: 310px;
+}
+#blog .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#blog .navbar li {
+    padding: 5px 0px;
+    font-weight: bold;
+}
+#blog .navbar li a {
+    text-decoration: none;
+}
+#aboutme .resume {
+    background: radial-gradient(rgb(65,77,224), rgb(10,12,28) 85%);
+    border: 3px solid rgb(58,65,190);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media screen and (min-width: 1025px) {
     .header li {
         float: left;
     }
     .header li a {
-        padding: 20px 30px;
+        padding: 20px 20px;
     }
     .header .menu {
         clear: none;
@@ -363,8 +416,15 @@ h1 {
         width: auto;
     }
     .aboutme {
-        margin: 80px 125px;
-        padding: 50px;
+        margin: 0px 125px;
+        padding: 20px 50px;
+        margin-top: 80px;
+    }
+    .skills {
+        margin: 0px 125px;
+        padding: 20px 50px;
+        margin-top: 80px;
+        margin-bottom: -50px;
     }
     .aboutme img {
         width: 550px;
@@ -375,4 +435,40 @@ h1 {
     .intro {
         transform: scale(1.2);
     }
-} 
+}
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 4px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    } 
+    nav img {
+        height: 40px;
+    }
+    .aboutme {
+        margin: 0px 100px;
+        padding: 20px 50px;
+        margin-top: 80px;
+    }
+    .skills {
+        margin: 0px 100px;
+        padding: 20px 50px;
+        margin-top: 80px;
+        margin-bottom: -75px;
+    }
+    .skills img {
+        padding: 0px 15px;
+    }
+    h1{
+        margin-top: 120px;
+    }
+}
