@@ -15,22 +15,22 @@ The purpose of my portfolio website is to get me hired as a junior developer whi
 The portfolio features a homepage that contains links to my social medias, an about me page that explains a little about me, a projects page that shows previous projects I have worked on, a blog page so i can put up blog posts about my life and a contact page that has a standard contact form for contacting me (not working yet).
 
 Wireframe
-![wireframe](./docs/SiteWireframe.png)
+![wireframe](./docs/SiteWireframe.png =250x)
 
 The Sitemap
-![sitemap](./docs/Sitemap.png)
+![sitemap](./docs/Sitemap.png =250x)
 
 Screenshots
-![desktop](./docs/DesktopHome.png)
-![desktop](./docs/DesktopAbout.png)
-![desktop](./docs/DesktopProject.png)
-![desktop](./docs/DesktopBlog.png)
-![desktop](./docs/DesktopContact.png)
-![mobile](./docs/MobileHome.png)
-![mobile](./docs/MobileAbout.png)
-![mobile](./docs/MobileProject.png)
-![mobile](./docs/MobileBlog.png)
-![mobile](./docs/MobileContact.png)
+![desktop](./docs/DesktopHome.png =250x)
+![desktop](./docs/DesktopAbout.png =250x)
+![desktop](./docs/DesktopProjects.png =250x)
+![desktop](./docs/DesktopBlog.png =250x)
+![desktop](./docs/DesktopContact.png =250x)
+![mobile](./docs/MobileHome.png =250x)
+![mobile](./docs/MobileAbout.png =250x)
+![mobile](./docs/MobileProjects.png =250x)
+![mobile](./docs/MobileBlog.png =250x)
+![mobile](./docs/MobileContact.png =250x)
 
 
 The target audience for my site would be anyone interested in my life, my projects that i'm involved in or hiring me to work for/with them.
