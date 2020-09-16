@@ -1,9 +1,9 @@
 # T1A3 README
 ### Deployed link
-https://brandonrobertson23.github.io/t1a3/src/html/index.html
+https://brandon-robertson-dev.github.io/t1a3/src/html/index.html
 ___
 ### GitHub Repo
-https://github.com/brandonrobertson23/t1a3
+https://github.com/brandon-robertson-dev/t1a3
 ___
 ### Purpose
 The purpose of my portfolio website is to get me hired as a junior developer while also showing of my #gamer personality, lifestyle and aesthetics to my potential employers.
