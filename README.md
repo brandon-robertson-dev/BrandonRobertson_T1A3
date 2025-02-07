@@ -1,6 +1,6 @@
 # T1A3 README
 ### Deployed link
-https://brandon-robertson-dev.github.io/t1a3/src/html/index.html
+https://brandon-robertson-dev.github.io/BrandonRobertson_T1A3/src/html/index.html
 ___
 ### GitHub Repo
 https://github.com/brandon-robertson-dev/t1a3
